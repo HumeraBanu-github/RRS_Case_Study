@@ -14,10 +14,10 @@ import com.RrsCaseStudy.model.TrainAvailability;
 @RequestMapping("/train")
 public class TrainAvailabilityResource {
 	@RequestMapping("/{trainNo}")
-	public TrainAvailability dispTrain(@PathVariable("trainNo") int trainNo)
+	public String dispTrain(@PathVariable("trainNo") int trainNo)
 	{
 	
-	return new TrainAvailability(trainNo, "trainName1", "startLocation1", "destination1", 250.4);
+	return "Hello World from Train Avaialabilty Service";
         		
 	}
 
